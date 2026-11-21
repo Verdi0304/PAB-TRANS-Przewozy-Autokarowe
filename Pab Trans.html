@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pab-Trans | Przewozy Autokarowe</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#fff;color:#111827}
+header{background:#fff;border-bottom:3px solid #155eef;padding:20px 8%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px}
+.logo{font-size:30px;font-weight:900;color:#155eef;letter-spacing:1px}.logo span{color:#111}
+nav{display:flex;gap:22px;flex-wrap:wrap}nav a{text-decoration:none;color:#111;font-weight:bold;transition:.3s}nav a:hover{color:#155eef}
+.hero{padding:100px 20px;text-align:center;background:linear-gradient(135deg,#fff,#edf4ff)}
+.hero h1{font-size:48px;color:#155eef;margin-bottom:20px}.hero p{font-size:20px;color:#222;margin-bottom:30px}
+.btn{display:inline-block;background:#155eef;color:white;padding:14px 30px;border-radius:8px;text-decoration:none;font-weight:bold;transition:.3s}.btn:hover{background:#0d43ad;transform:translateY(-2px)}
+section{padding:65px 8%}section h2{text-align:center;color:#155eef;font-size:32px;margin-bottom:35px}
+.about{text-align:center;max-width:850px;margin:auto;line-height:1.8;font-size:17px}
+.services{background:#f5f8ff}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{background:white;padding:25px;border-radius:12px;border:1px solid #dce7fa;border-left:5px solid #155eef;box-shadow:0 4px 12px rgba(0,0,0,.04);transition:.3s}
+.card:hover{transform:translateY(-5px);box-shadow:0 8px 20px rgba(21,94,239,.12)}.card h3{color:#111;margin-bottom:10px}.card p{color:#555;line-height:1.6}
+.routes-container{max-width:950px;margin:auto}.route-group{margin-bottom:25px;border:1px solid #dce7fa;border-radius:10px;overflow:hidden}
+.route-group h3{background:#155eef;color:white;padding:16px 20px}.route-list{list-style:none;padding:10px 20px}
+.route-list li{padding:13px 5px;border-bottom:1px solid #eee;font-size:16px}.route-list li:last-child{border-bottom:none}.route-list li::before{content:"🚌 "}
+.contact{background:#f5f8ff;text-align:center}.contact-box{max-width:600px;margin:auto;background:white;padding:35px;border-radius:12px;border-top:5px solid #155eef;line-height:2;box-shadow:0 5px 20px rgba(0,0,0,.05)}
+.contact-box a{color:#155eef;text-decoration:none;font-weight:bold}
+footer{background:#111827;color:white;text-align:center;padding:25px 15px}footer span{color:#4b8cff}
+@media(max-width:650px){header{justify-content:center;text-align:center}nav{justify-content:center}.hero h1{font-size:34px}.hero{padding:70px 20px}section{padding:45px 6%}}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">PAB-<span>TRANS</span></div>
+<nav><a href="#onas">O nas</a><a href="#uslugi">Usługi</a><a href="#rozklad">Rozkład jazdy</a><a href="#kontakt">Kontakt</a></nav>
+</header>
+<section class="hero"><h1>Przewozy Autokarowe Pab-Trans</h1><p>Bezpiecznie. Komfortowo. Zawsze na czas.</p><a href="#uslugi" class="btn">Poznaj nasze usługi</a></section>
+<section id="onas"><h2>O nas</h2><div class="about"><p>Witamy na stronie <strong>Przewozów Autokarowych Pab-Trans</strong>. Oferujemy transport pasażerski, przewozy grupowe, wycieczki krajowe i zagraniczne oraz przewozy pracownicze.</p><p>Naszym celem jest komfortowa, bezpieczna i sprawna podróż. Zapraszamy do zapoznania się z naszą ofertą.</p></div></section>
+<section id="uslugi" class="services"><h2>Nasze usługi</h2><div class="cards">
+<div class="card"><h3>Wycieczki szkolne</h3><p>Transport na wycieczki szkolne, wyjazdy edukacyjne i wycieczki grupowe.</p></div>
+<div class="card"><h3>Wycieczki zagraniczne</h3><p>Przewozy grup zorganizowanych do różnych miejsc w Europie.</p></div>
+<div class="card"><h3>Wycieczki krajowe</h3><p>Podróże po Polsce, wyjazdy turystyczne oraz obsługa grup.</p></div>
+<div class="card"><h3>Przewozy pracownicze</h3><p>Transport pracowników do zakładów pracy i na zorganizowane zmiany.</p></div>
+<div class="card"><h3>Wynajem autokarów</h3><p>Wynajem autokarów na wyjazdy, wydarzenia, imprezy i wycieczki.</p></div>
+</div></section>
+<section id="rozklad"><h2>Rozkład jazdy</h2><div class="routes-container">
+<div class="route-group"><h3>Malechowo</h3><ul class="route-list"><li>Malechowo – Sławno</li><li>Malechowo – Smardzewo</li><li>Malechowo – Darłowo</li></ul></div>
+<div class="route-group"><h3>Sławno</h3><ul class="route-list"><li>Sławno – Malechowo</li><li>Sławno – Darłowo (przez Karwice)</li><li>Sławno – Darłowo (przez DW 205)</li><li>Sławno – Smardzewo</li></ul></div>
+<div class="route-group"><h3>Smardzewo</h3><ul class="route-list"><li>Smardzewo – Darłowo</li><li>Smardzewo – Sławno</li><li>Smardzewo – Malechowo</li></ul></div>
+<div class="route-group"><h3>Darłowo</h3><ul class="route-list"><li>Darłowo – Sławno (przez Karwice)</li><li>Darłowo – Sławno (przez DW 205)</li><li>Darłowo – Malechowo</li><li>Darłowo – Smardzewo</li></ul></div>
+</div></section>
+<section id="kontakt" class="contact"><h2>Biuro / Kontakt</h2><div class="contact-box"><p><strong>Przewozy Autokarowe „Pab-Trans”</strong></p><p>📍 Karwice 4, 76-142 Malechowo</p><p>📞 Telefon: <a href="tel:755201133">755-201-133</a></p><p>✉️ E-mail: <a href="mailto:PrzewozyPabTrans@op.pl">PrzewozyPabTrans@op.pl</a></p><p><strong>Kierownictwo:</strong> Wiktor Pęczak</p></div></section>
+<footer><p>© 2026 <span>Pab-Trans</span> | Przewozy Autokarowe</p><p>Polish Car Driving</p></footer>
+</body></html>
